@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>约数计算器</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">约数计算器</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <h3>本系统可以查询1~1000000之内的所有数字的因数（数字太大会等很久)</h3>
+    <p>请输入需要查询的数字</p>
+    <p><input type="number" class="form-control" id="numbertxt"></p>
+    <p><button type="button" class="btn btn-info">查询</button></p>
+  </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$(function(){
+  $('.btn-info').click(function(){
+    var number = $('#numbertxt').val();
+    window.location = '/' + number;
+  })
+
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>计算结果</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">约数计算器</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <h3>结果页面</h3>
+    <p>
+      数字<%= number %>的因数如下（本次耗时：<%= during %>）：
+    </p>
+    <ul>
+      <% 
+        let len = resultArr.length;
+        for(let i = 0; i < len; i++){
+      %>
+        <li><%= resultArr[i] %></li>
+      <%
+        }
+      %>
+    </ul>
+  </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  
+})
+</script>
+</body>
+</html>
