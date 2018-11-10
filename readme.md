@@ -22,10 +22,11 @@ npm run build
 ```
 
 ## 技术栈
-
+``` bash
 node
 express
 ejs
+```
 
 ## 功能
 ``` bash
