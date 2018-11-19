@@ -14,6 +14,6 @@ exports.read = (number,callback) => {
       return; // 程序当前函数
     }
 
-    callback(JSON.parse(data));
+    callback(JSON.parse(data));  // 默认使用data.toString()
   })
 }
